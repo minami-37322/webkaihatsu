@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -7,8 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-   <span th:text="${session.mailadd}">dummy</span>さんこんにちは<br>
-   <a th:href="@{/mail/mypage}">
-to マイページへ</a>
+    <span th:text="${session.mailadd}">dummy</span>
+    <span th:text="${session.password}">dummy1</span>
 </body>
 </html>

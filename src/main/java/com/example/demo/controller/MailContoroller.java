@@ -27,7 +27,17 @@ public class MailContoroller {
     }else{
         return "mail-pass";
     }
-    
-    }
 
+    }
+    // @RequestMapping("mail-pass")
+    // public String toPage1(){
+    //     return "mail-result.html";
+    // }
+
+
+
+    @RequestMapping("/mypage")
+    public String toMyPage(){
+    return "mail-result2";
+}
 }

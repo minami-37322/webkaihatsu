@@ -38,5 +38,8 @@ public class CalcController {
         model.addAttribute("num2", num2);
         model.addAttribute("answer", result);
         return "calc-result";
+        
+      
+        
     }
 }
