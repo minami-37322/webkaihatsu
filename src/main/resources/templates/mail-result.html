@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -6,10 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="result-total-scope.html" th:action="@{/total-scope/input-num}" method="post">
-        <input type="text" name="num1">
-        <input type="text" name="num2"><br>
-        <button>送信</button>
-    </form> 
+   <span th:text="${session.mailadd}">dummy</span>さんこんにちは<br>
+   <a th:href="@{/mail/mypage}">
+to マイページへ</a>
 </body>
 </html>

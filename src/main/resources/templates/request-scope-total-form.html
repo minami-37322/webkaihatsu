@@ -6,7 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    入力された数字は「<span th:text="${number1}">一</span>です。」
-    入力された数字は「<span th:text="${number2}">一</span>です。」
+    <form action="result-total-scope.html" th:action="@{/total/input-num}" method="post">
+        <input type="text" name="num1">
+        <input type="text" name="num2"><br>
+        <button>送信</button>
+    </form> 
 </body>
 </html>

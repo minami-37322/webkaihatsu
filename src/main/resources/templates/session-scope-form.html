@@ -6,7 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    入力された数字は「<span th:text="${number1}">一</span>です。」
-    入力された数字は「<span th:text="${number2}">一</span>です。」
+    名前を入力してください
+    <form action="result-session-scope1.html" th:action="@{session-scope/input-name}" method="post">
+        <input type="text" name="name">
+        <button>送信</button>
+    </form>
 </body>
 </html>

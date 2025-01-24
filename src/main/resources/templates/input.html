@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form th:action="@{/calc/execute}" method="post">
+        <input type="number" name="num1">
+        <select name="operator">
+            <option value="＋">＋</option>
+            <option value="－">－</option>
+            <option value="×">×</option>
+            <option value="÷">÷</option>
+        </select>
+        <input type="number" name="num2">＝<br>
+        <button>送信</button>
+    </form>
+</body>
+</html>
