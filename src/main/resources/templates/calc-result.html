@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span th:text="${num1}"></span>
+    <span th:text="${operator}"></span>
+    <span th:text="${num2}"></span>
+    =
+    <span th:text="${answer}"></span><br>
+    <a th:href="@{/calc}" method="get"><button>戻る</button></a>
+</body>
+</html>

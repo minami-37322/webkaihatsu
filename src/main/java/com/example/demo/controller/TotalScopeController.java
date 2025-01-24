@@ -1,4 +1,4 @@
-package com.example.demo.toatl;
+package com.example.demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,7 +12,7 @@ public class TotalScopeController {
     
     @RequestMapping("")
      public String index(){
-        return "total-scope-form";
+        return "request-scope-total-form";
      }
 
      @RequestMapping("/input-num")
